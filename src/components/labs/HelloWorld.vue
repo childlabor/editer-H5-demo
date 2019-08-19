@@ -4,7 +4,8 @@
     :style="options.styleObject">
     <h1>{{ msg }}</h1>
     <p>
-      更新测试For a guide and recipes on how to configure / customize this project,<br />
+      {{ dataTest }}
+      For a guide and recipes on how to configure / customize this project,<br />
       check out the
       <a href="https://cli.vuejs.org" target="_blank" rel="noopener"
         >vue-cli documentation</a
@@ -89,11 +90,21 @@
 </template>
 
 <script>
+import dayjs from 'dayjs'
 export default {
   name: "HelloWorld",
   props: {
     msg: String,
     options: Object
+  },
+  data() {
+    return {
+      dataTest: '',
+    }
+  },
+
+  created() {
+    this.dataTest = dayjs('2018-08-08');
   }
 };
 </script>
