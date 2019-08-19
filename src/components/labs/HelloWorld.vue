@@ -91,6 +91,8 @@
 
 <script>
 import dayjs from 'dayjs'
+var moment = require('moment');
+
 export default {
   name: "HelloWorld",
   props: {
