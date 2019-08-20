@@ -3,6 +3,7 @@
     class="top-title"
     :style="options.styleObject">
     {{options.msg || '默认头部标题栏来-来自demo_h5_lib'}}
+    <slot></slot>
   </div>
 </template>
 

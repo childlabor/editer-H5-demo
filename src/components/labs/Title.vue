@@ -3,6 +3,7 @@
     class="title"
     :style="options.styleObject">
     {{options.msg || '这是标题这是标题这是标题'}}
+    <slot></slot>
   </div>
 </template>
 
